@@ -1,0 +1,45 @@
+*** Encoding resources ***
+
+Regions:
+Things like the large 7-segment digit used to display the time are created by making a PNG of the appropriate
+size and shape (max 127x127) and drawing all the segments, in the form of an '8'.
+Individual segments (regions) are then coloured to identify them (max of 16).
+A single region may contain multiple parts coloured with the "detail" colour, and (optionally) ONE rectangle in the "bulk" colour.
+Detail parts of a region are painted row by row, the bulk part is painted as a single fill, so maximizing its size should speed up rendering.
+Only the pixels in a region are painted, allowing multiple regons to fit close together.
+
+The colours for each region are:
+Region Detail               Bulk
+ 0     RGB(255,   0,   0)   RGB(255, 100, 100)
+ 1     RGB(0,   255,   0)   RGB(100, 255, 100)
+ 2     RGB(0,     0, 255)   RGB(100, 100, 255)
+ 3     RGB(200,   0,   0)   RGB(200, 100, 100)
+ 4     RGB(0,   200,   0)   RGB(100, 200, 100)
+ 5     RGB(0,     0, 200)   RGB(100, 100, 200)
+ 6     RGB(150,   0,   0)   RGB(150, 100, 100)
+ 7     RGB(0,   150,   0)   RGB(100, 150, 100)
+ 8     RGB(0,     0, 150)   RGB(100, 100, 150)
+ 9     RGB(255, 255,   0)   RGB(255, 255, 100)
+10     RGB(0,   255, 255)   RGB(100, 255, 255)
+11     RGB(255,   0, 255)   RGB(255, 100, 255)
+12     RGB(200, 200,   0)   RGB(200, 200, 100)
+13     RGB(0,   200, 200)   RGB(100, 200, 200)
+14     RGB(200,   0, 200)   RGB(200, 100, 200)
+15     RGB(175,   0,   0)   RGB(175, 100, 100)
+
+See encoding.png
+
+encode_regions.py does the work. It takes a Name parameter and path to a PNG.
+It writes, to stdout: 
+macros Name_WIDTH and Name_HEIGHT, the dimensions of the image 
+A series of PROGMEM byte arrays, called Name<N>, which encode the N'th region.
+See encode_regions.py for the encoding details.
+build_large.bat and build_small.bat run encode_regions.py on all the resource PNG, 
+concatenating the output to a .h file
+
+Blocks:
+Bits of test like "Weather", "Moon" etc are handled is a similar way.  They are created
+in a single PNG and coloured using the "detail" colours
+encode_blocks.py does the encoding.
+A block is painted as a rectangular region, all the pixels are drawn.
+
