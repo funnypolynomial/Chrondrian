@@ -9,7 +9,10 @@ The graphics are done by creating coloured BMP files represeting, for example, a
 
 ![LargeDigit](https://github.com/funnypolynomial/Chrondrian/assets/5882685/b1f59f6e-bdc4-450a-84f8-2e59ae1eb8ae)
 
-The weather "forecast" is done using the Zambretti Forecaster algorithm, displayed as either an icon or the Zambretti text.
+The weather "forecast" is done using the [Zambretti Forecaster](https://en.wikipedia.org/wiki/Zambretti_Forecaster) algorithm, displayed as either an icon or the Zambretti text.
+
+![chron01](https://github.com/funnypolynomial/Chrondrian/assets/5882685/02dabd2c-81c1-4637-9b7c-885040665394)
+![chron02](https://github.com/funnypolynomial/Chrondrian/assets/5882685/4ca5747a-da41-4b77-8f0b-abc350fbca8b)
 
 The assembly is a stack of two identical boards, one is used as an adaptor connecting a Nano to the LCD shield.  The other has RTC, sensor, buzzer and buttons.  An Acrylic sheet protects the LCD. The boards are separated with brass stand-offs.
 
@@ -17,4 +20,10 @@ The assembly is a stack of two identical boards, one is used as an adaptor conne
 ![DSC06068](https://github.com/funnypolynomial/Chrondrian/assets/5882685/e380781c-11be-429d-80ce-9860e72d1614)
 
 The board is [here](https://oshwlab.com/funnypolynomial/chrondrian-final). Pins.h has an ASCII schematic.
+
+The code can also run on a 320x240 LCD and use touch instead of physical buttons.
+
+![chron04](https://github.com/funnypolynomial/Chrondrian/assets/5882685/29ea543e-d7e9-4f0b-bbb5-f447474b32ef)
+![chron03](https://github.com/funnypolynomial/Chrondrian/assets/5882685/6343eee9-6f38-4401-8094-364569efdb3c)
+
 
