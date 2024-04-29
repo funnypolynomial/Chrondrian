@@ -474,7 +474,8 @@ int displayedMinute = -1;
 int displayedDay = -1;
 int displayedTemperature = -9999;
 char displayedForecast = ' ';
-// Cleaner than ifdef's
+uint8_t displayedSegments = 0xAA;
+// Cleaner than ifdef's throughout
 #ifdef CONFIG_CELCIUS
 const bool displayCelcius = true;
 #else
@@ -546,12 +547,14 @@ void Loop()
         Format(pStr, T, 100, ' ');
         PaintTemperature(str, displayCelcius);
       }
-      // *** The forecast
+      // *** The forecast+moon
       char forecast = Weather::GetForecast();
-      if (forecast != displayedForecast)
+      uint8_t segments = Moon::Segments();
+      if (forecast != displayedForecast || segments != displayedSegments)
       {
         displayedForecast = forecast;
-        PaintForecast(forecast, Config::ForecastIcons);
+        displayedSegments = segments;
+        PaintWeather(forecast, segments);
       }
       
 #ifdef DEBUG  
