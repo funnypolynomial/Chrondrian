@@ -45,4 +45,7 @@
 //   *:direct connection from Nano to sockets for pins on LCD shield
 //   [XXX]'s are connected.
 //   $:Set/Adj momentary on push-buttons
+//
+//   SPL06 is newer stock (?) of https://www.jaycar.co.nz/duinotech-arduino-compatible-barometric-pressure-sensor/p/XC3702
+//   Board is labelled "SPL06/BME"
 //  
