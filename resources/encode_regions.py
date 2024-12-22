@@ -98,7 +98,7 @@ def Encode(block, bulk_Colour, detail_Colour):
                     sys.stdout.write(ByteStr(start - x0))
                 sys.stdout.write(", ")
                 firstRow = firstOnRow = skippedRow = False
-                bytes += 1
+                bytes += 2
         y += 1
         if skippedRow:
             skipRows += 1

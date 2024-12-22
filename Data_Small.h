@@ -16,7 +16,7 @@ static const uint8_t LargeDigit0[] PROGMEM =
   0x02, 0x85,   0x02, 0x1B, 
   0x01, 0x86,   0x01, 0x1B, 
   0x00
-};  // 25 bytes 
+};  // 43 bytes 
 
 static const uint8_t LargeDigit1[] PROGMEM =
 {
@@ -35,7 +35,7 @@ static const uint8_t LargeDigit1[] PROGMEM =
   0x05, 0x85, 
   0x03, 0x86, 
   0x00
-};  // 19 bytes 
+};  // 30 bytes 
 
 static const uint8_t LargeDigit2[] PROGMEM =
 {
@@ -54,7 +54,7 @@ static const uint8_t LargeDigit2[] PROGMEM =
   0x03, 0x86, 
   0x02, 0x87, 
   0x00
-};  // 19 bytes 
+};  // 30 bytes 
 
 static const uint8_t LargeDigit3[] PROGMEM =
 {
@@ -71,7 +71,7 @@ static const uint8_t LargeDigit3[] PROGMEM =
   0x07, 0x80,   0x07, 0x1B, 
   0x05, 0x82,   0x05, 0x1B, 
   0x00
-};  // 26 bytes 
+};  // 44 bytes 
 
 static const uint8_t LargeDigit4[] PROGMEM =
 {
@@ -90,7 +90,7 @@ static const uint8_t LargeDigit4[] PROGMEM =
   0x03, 0x81, 
   0x02, 0x81, 
   0x00
-};  // 19 bytes 
+};  // 30 bytes 
 
 static const uint8_t LargeDigit5[] PROGMEM =
 {
@@ -109,7 +109,7 @@ static const uint8_t LargeDigit5[] PROGMEM =
   0x05, 0x80, 
   0x03, 0x81, 
   0x00
-};  // 19 bytes 
+};  // 30 bytes 
 
 static const uint8_t LargeDigit6[] PROGMEM =
 {
@@ -125,9 +125,9 @@ static const uint8_t LargeDigit6[] PROGMEM =
   0x03, 0x83,   0x03, 0x1A, 
   0x02, 0x84,   0x02, 0x1A, 
   0x00
-};  // 24 bytes 
+};  // 40 bytes 
 
-// (151 bytes total)
+// (247 bytes total)
 
 // ---------------------------------
 #define SmallDigit_WIDTH  20
@@ -140,7 +140,7 @@ static const uint8_t SmallDigit0[] PROGMEM =
   0x02, 0x80,   0x02, 0x0E, 
   0x01, 0x81,   0x01, 0x0E, 
   0x00
-};  // 13 bytes 
+};  // 19 bytes 
 
 static const uint8_t SmallDigit1[] PROGMEM =
 {
@@ -151,7 +151,7 @@ static const uint8_t SmallDigit1[] PROGMEM =
   0x89, 
   0x02, 0x82, 
   0x00
-};  // 11 bytes 
+};  // 14 bytes 
 
 static const uint8_t SmallDigit2[] PROGMEM =
 {
@@ -162,7 +162,7 @@ static const uint8_t SmallDigit2[] PROGMEM =
   0x03, 0x81, 
   0x01, 0x82, 
   0x00
-};  // 11 bytes 
+};  // 14 bytes 
 
 static const uint8_t SmallDigit3[] PROGMEM =
 {
@@ -173,7 +173,7 @@ static const uint8_t SmallDigit3[] PROGMEM =
   0x02, 0x80,   0x02, 0x0E, 
   0x01, 0x81,   0x01, 0x0E, 
   0x00
-};  // 14 bytes 
+};  // 20 bytes 
 
 static const uint8_t SmallDigit4[] PROGMEM =
 {
@@ -184,7 +184,7 @@ static const uint8_t SmallDigit4[] PROGMEM =
   0x03, 0x80, 
   0x01, 0x81, 
   0x00
-};  // 11 bytes 
+};  // 14 bytes 
 
 static const uint8_t SmallDigit5[] PROGMEM =
 {
@@ -195,7 +195,7 @@ static const uint8_t SmallDigit5[] PROGMEM =
   0x89, 
   0x02, 0x80, 
   0x00
-};  // 11 bytes 
+};  // 14 bytes 
 
 static const uint8_t SmallDigit6[] PROGMEM =
 {
@@ -205,9 +205,9 @@ static const uint8_t SmallDigit6[] PROGMEM =
   0x02, 0x00,   0x02, 0x0E, 
   0x02, 0x80,   0x02, 0x0E, 
   0x00
-};  // 12 bytes 
+};  // 16 bytes 
 
-// (83 bytes total)
+// (111 bytes total)
 
 // ---------------------------------
 #define SmallChar_WIDTH  20
@@ -220,7 +220,7 @@ static const uint8_t SmallChar0[] PROGMEM =
   0x02, 0x80,   0x02, 0x0E, 
   0x01, 0x81,   0x01, 0x0E, 
   0x00
-};  // 13 bytes 
+};  // 19 bytes 
 
 static const uint8_t SmallChar1[] PROGMEM =
 {
@@ -231,7 +231,7 @@ static const uint8_t SmallChar1[] PROGMEM =
   0x89, 
   0x02, 0x82, 
   0x00
-};  // 11 bytes 
+};  // 14 bytes 
 
 static const uint8_t SmallChar2[] PROGMEM =
 {
@@ -242,7 +242,7 @@ static const uint8_t SmallChar2[] PROGMEM =
   0x03, 0x81, 
   0x01, 0x82, 
   0x00
-};  // 11 bytes 
+};  // 14 bytes 
 
 static const uint8_t SmallChar3[] PROGMEM =
 {
@@ -253,7 +253,7 @@ static const uint8_t SmallChar3[] PROGMEM =
   0x02, 0x80,   0x02, 0x0E, 
   0x01, 0x81,   0x01, 0x0E, 
   0x00
-};  // 14 bytes 
+};  // 20 bytes 
 
 static const uint8_t SmallChar4[] PROGMEM =
 {
@@ -264,7 +264,7 @@ static const uint8_t SmallChar4[] PROGMEM =
   0x03, 0x80, 
   0x01, 0x81, 
   0x00
-};  // 11 bytes 
+};  // 14 bytes 
 
 static const uint8_t SmallChar5[] PROGMEM =
 {
@@ -275,7 +275,7 @@ static const uint8_t SmallChar5[] PROGMEM =
   0x89, 
   0x02, 0x80, 
   0x00
-};  // 11 bytes 
+};  // 14 bytes 
 
 static const uint8_t SmallChar6[] PROGMEM =
 {
@@ -285,7 +285,7 @@ static const uint8_t SmallChar6[] PROGMEM =
   0x01, 0x00,   0x01, 0x06, 
   0x01, 0x80,   0x01, 0x06, 
   0x00
-};  // 12 bytes 
+};  // 16 bytes 
 
 static const uint8_t SmallChar7[] PROGMEM =
 {
@@ -295,7 +295,7 @@ static const uint8_t SmallChar7[] PROGMEM =
   0x01, 0x00,   0x01, 0x06, 
   0x01, 0x80,   0x01, 0x06, 
   0x00
-};  // 12 bytes 
+};  // 16 bytes 
 
 static const uint8_t SmallChar8[] PROGMEM =
 {
@@ -310,7 +310,7 @@ static const uint8_t SmallChar8[] PROGMEM =
   0x02, 0x82, 
   0x01, 0x83, 
   0x00
-};  // 13 bytes 
+};  // 22 bytes 
 
 static const uint8_t SmallChar9[] PROGMEM =
 {
@@ -320,7 +320,7 @@ static const uint8_t SmallChar9[] PROGMEM =
   0x89, 
   0x02, 0x81, 
   0x00
-};  // 10 bytes 
+};  // 12 bytes 
 
 static const uint8_t SmallChar10[] PROGMEM =
 {
@@ -335,7 +335,7 @@ static const uint8_t SmallChar10[] PROGMEM =
   0x02, 0x80, 
   0x01, 0x80, 
   0x00
-};  // 13 bytes 
+};  // 22 bytes 
 
 static const uint8_t SmallChar11[] PROGMEM =
 {
@@ -350,7 +350,7 @@ static const uint8_t SmallChar11[] PROGMEM =
   0x02, 0x80, 
   0x01, 0x80, 
   0x00
-};  // 13 bytes 
+};  // 22 bytes 
 
 static const uint8_t SmallChar12[] PROGMEM =
 {
@@ -360,7 +360,7 @@ static const uint8_t SmallChar12[] PROGMEM =
   0x89, 
   0x02, 0x81, 
   0x00
-};  // 10 bytes 
+};  // 12 bytes 
 
 static const uint8_t SmallChar13[] PROGMEM =
 {
@@ -375,9 +375,9 @@ static const uint8_t SmallChar13[] PROGMEM =
   0x02, 0x82, 
   0x01, 0x83, 
   0x00
-};  // 13 bytes 
+};  // 22 bytes 
 
-// (167 bytes total)
+// (239 bytes total)
 
 // ---------------------------------
 #define VerySmallChar_WIDTH  9
@@ -448,7 +448,7 @@ static const uint8_t VerySmallChar8[] PROGMEM =
   0x01, 0x82, 
   0x01, 0x82, 
   0x00
-};  // 10 bytes 
+};  // 16 bytes 
 
 static const uint8_t VerySmallChar9[] PROGMEM =
 {
@@ -467,7 +467,7 @@ static const uint8_t VerySmallChar10[] PROGMEM =
   0x01, 0x80, 
   0x01, 0x80, 
   0x00
-};  // 10 bytes 
+};  // 16 bytes 
 
 static const uint8_t VerySmallChar11[] PROGMEM =
 {
@@ -479,7 +479,7 @@ static const uint8_t VerySmallChar11[] PROGMEM =
   0x01, 0x80, 
   0x01, 0x80, 
   0x00
-};  // 10 bytes 
+};  // 16 bytes 
 
 static const uint8_t VerySmallChar12[] PROGMEM =
 {
@@ -498,9 +498,9 @@ static const uint8_t VerySmallChar13[] PROGMEM =
   0x01, 0x82, 
   0x01, 0x82, 
   0x00
-};  // 10 bytes 
+};  // 16 bytes 
 
-// (110 bytes total)
+// (134 bytes total)
 
 // ---------------------------------
 #define Moon_WIDTH  37
@@ -541,7 +541,7 @@ static const uint8_t Moon0[] PROGMEM =
   0x03, 0x89, 
   0x02, 0x8B, 
   0x00
-};  // 38 bytes 
+};  // 67 bytes 
 
 static const uint8_t Moon1[] PROGMEM =
 {
@@ -569,7 +569,7 @@ static const uint8_t Moon1[] PROGMEM =
   0x04, 0x85, 
   0x03, 0x86, 
   0x00
-};  // 28 bytes 
+};  // 48 bytes 
 
 static const uint8_t Moon2[] PROGMEM =
 {
@@ -597,7 +597,7 @@ static const uint8_t Moon2[] PROGMEM =
   0x04, 0x80, 
   0x03, 0x80, 
   0x00
-};  // 28 bytes 
+};  // 48 bytes 
 
 static const uint8_t Moon3[] PROGMEM =
 {
@@ -635,9 +635,9 @@ static const uint8_t Moon3[] PROGMEM =
   0x03, 0x81, 
   0x02, 0x80, 
   0x00
-};  // 38 bytes 
+};  // 67 bytes 
 
-// (132 bytes total)
+// (230 bytes total)
 
 // ---------------------------------
 #define Degrees_WIDTH  20
@@ -654,7 +654,7 @@ static const uint8_t Degrees0[] PROGMEM =
   0x07, 0x80, 
   0x07, 0x80, 
   0x00
-};  // 20 bytes 
+};  // 33 bytes 
 
 static const uint8_t Degrees1[] PROGMEM =
 {
@@ -670,7 +670,7 @@ static const uint8_t Degrees2[] PROGMEM =
   0x00
 };  // 7 bytes 
 
-// (34 bytes total)
+// (47 bytes total)
 
 // ---------------------------------
 #define Sun_WIDTH  53
@@ -711,7 +711,7 @@ static const uint8_t Sun0[] PROGMEM =
   0x03, 0x88, 
   0x01, 0x89, 
   0x00
-};  // 68 bytes 
+};  // 132 bytes 
 
 static const uint8_t Sun1[] PROGMEM =
 {
@@ -745,9 +745,9 @@ static const uint8_t Sun1[] PROGMEM =
   0x02, 0x80, 
   0x02, 0x80, 
   0x00
-};  // 38 bytes 
+};  // 68 bytes 
 
-// (106 bytes total)
+// (200 bytes total)
 
 // ---------------------------------
 #define Cloud_WIDTH  53
@@ -779,7 +779,7 @@ static const uint8_t Cloud0[] PROGMEM =
   0x03, 0x82,   0x05, 0x1D, 
   0x02, 0x83,   0x03, 0x1D, 
   0x00
-};  // 55 bytes 
+};  // 106 bytes 
 
 static const uint8_t Cloud1[] PROGMEM =
 {
@@ -795,7 +795,7 @@ static const uint8_t Cloud2[] PROGMEM =
   0x00
 };  // 7 bytes 
 
-// (69 bytes total)
+// (120 bytes total)
 
 // ---------------------------------
 #define Storm_WIDTH  53
@@ -820,7 +820,7 @@ static const uint8_t Storm0[] PROGMEM =
   0x81, 
   0x03, 0x82, 
   0x00
-};  // 28 bytes 
+};  // 48 bytes 
 
 static const uint8_t Storm1[] PROGMEM =
 {
@@ -841,9 +841,9 @@ static const uint8_t Storm1[] PROGMEM =
   0x01, 0x82, 
   0x01, 0x81, 
   0x00
-};  // 19 bytes 
+};  // 34 bytes 
 
-// (47 bytes total)
+// (82 bytes total)
 
 // ---------------------------------
 static const uint8_t Text0[] PROGMEM =
