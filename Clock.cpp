@@ -201,8 +201,8 @@ void PaintForecast(char forecast, bool icons)
   if (icons)
   {
     ForecastIcon icon = Num_ForecastIcons;
-    if (::isalpha(forecast))
-      icon = (ForecastIcon)map(forecast, 'A', 'Z', 0, Num_ForecastIcons - 1);
+    if (::isalpha(forecast)) // map the letter range A-Z to the icon range, Sunny-Stormy
+      icon = (ForecastIcon)min((forecast - 'A')/(('Z' - 'A' + 1)/Num_ForecastIcons), Num_ForecastIcons - 1);
     for (int idx = 0; idx < Num_ForecastIcons; idx++)
       Graphics::Weather(CELL_X(pCellDef) + Graphics::WeatherWidth()*idx, CELL_Y(pCellDef) + (CELL_H(pCellDef) - Graphics::WeatherHeight())/2 + GAP_Y, idx, (idx == icon || forecast == '?')?CONFIG_LCD_ON_COLOUR:background, background);
   }
