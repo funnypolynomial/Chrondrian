@@ -239,7 +239,7 @@ char LookupForecast(tPressure currentPressureMSL, const char* pTable, int8_t sea
   while (pgm_read_byte_near(pLetters))
   {
     tablePressure = ReadTablePressure(pPressures);
-    tPressure diff = abs(currentPressure - tablePressure);
+    tPressure diff = abs(currentPressureMSL - tablePressure);
     if (diff < minDiff)
     {
       minDiff = diff;
