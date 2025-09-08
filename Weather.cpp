@@ -209,7 +209,7 @@ const char pSteadyPressureTable[]  PROGMEM = {    'A',     'B',     'E',     'K'
 //                    DNOSAJJMAMFJ- 
 #define JUN_JUL_AUG 0b0000111000000
 #define DEC_JAN_FEB 0b1000000000110
-#ifdef CONFIG_NORTHERN_HEMISPHERE
+#ifndef CONFIG_SOUTHERN_HEMISPHERE
 bool IsWinter() { return DEC_JAN_FEB & (1 << rtc.m_Month); }
 bool IsSummer() { return JUN_JUL_AUG & (1 << rtc.m_Month); }
 #else
