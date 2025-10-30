@@ -28,3 +28,6 @@ The code can also run on a 320x240 LCD and use touch instead of physical buttons
 ![chron03](https://github.com/funnypolynomial/Chrondrian/assets/5882685/6343eee9-6f38-4401-8094-364569efdb3c)
 
 
+More details at [Hackaday.io](https://hackaday.io/project/195665-chrondrian)
+
+More photos at [Flckr](https://flic.kr/s/aHBqjBmV6D)
